@@ -150,18 +150,7 @@
     border-radius: 999px;
     border: 2px solid var(--border-strong);
   
-    /* Foto + lichte highlight */
-    background-image:
-      radial-gradient(circle at 30% 20%, rgba(15, 23, 42, 0.35), transparent 60%),
-      url("../images/profilePic.png");
-    background-repeat: no-repeat, no-repeat;
-    /* gradient gewoon centered, foto iets hoger en ingezoomd */
-    background-position:
-      center,
-      center 18%;
-    background-size:
-      auto,
-      135%;
+    background: url("../images/profilePic.png") center 20% / cover no-repeat;
   
     box-shadow:
       0 0 0 1px rgba(15, 23, 42, 0.7),
@@ -170,7 +159,6 @@
     flex-shrink: 0;
     min-width: 64px;
     min-height: 64px;
-  
     transition:
       transform 0.18s ease,
       box-shadow 0.18s ease;
