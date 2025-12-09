@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Rauf Kahraman</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="cv-shell" id="top">
+        <header class="cv-header">
+          <div class="cv-header-main">
+            <div class="cv-avatar-placeholder"></div>
+            <div>
+              <h1 class="cv-name" data-lang-block="nl">Rauf Kahraman</h1>
+              <h1 class="cv-name" data-lang-block="en">Rauf Kahraman</h1>
+
+              <p class="cv-role" data-lang-block="nl">programmeur</p>
+              <p class="cv-role" data-lang-block="en">programmer</p>
+            </div>
+          </div>
+
+          <div class="cv-header-meta">
+            <!-- Taal-toggle -->
+            <div class="lang-toggle">
+              <span class="lang-label">NL</span>
+              <label class="switch">
+                <input
+                  type="checkbox"
+                  id="langSwitch"
+                  aria-label="Switch language"
+                  checked
+                />
+                <span class="slider"></span>
+              </label>
+              <span class="lang-label">EN</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- NAV -->
+        <nav class="cv-nav">
+          <button class="cv-nav-btn cv-nav-btn--active" data-section="about">
+            <span data-lang-block="nl">Over mij</span>
+            <span data-lang-block="en">About me</span>
+          </button>
+
+          <button class="cv-nav-btn" data-section="experience">
+            <span data-lang-block="nl">job Ervaring</span>
+            <span data-lang-block="en">job Experience</span>
+          </button>
+
+          <button class="cv-nav-btn" data-section="education">
+            <span data-lang-block="nl">Opleiding</span>
+            <span data-lang-block="en">Education</span>
+          </button>
+
+          <button class="cv-nav-btn" data-section="skills">
+            <span data-lang-block="nl">Skills</span>
+            <span data-lang-block="en">Skills</span>
+          </button>
+
+          <button class="cv-nav-btn" data-section="projects">
+            <span data-lang-block="nl">Projecten</span>
+            <span data-lang-block="en">Projects</span>
+          </button>
+        </nav>
+
+        <div class="cv-layout">
+          <!-- SIDEBAR: alleen Contact + Languages -->
+          <aside class="cv-sidebar">
+            <section class="cv-sidebar-block">
+              <h2 class="cv-sidebar-heading" data-lang-block="nl">Contact</h2>
+              <h2 class="cv-sidebar-heading" data-lang-block="en">Contact</h2>
+              <ul class="cv-list">
+                <li>📧 Raufkrm2@gmail.com</li>
+                <li>📞 +32 475 84 86 50</li>
+                <!-- <li>🌐 linkedin.com/in/your-profile</li> -->
+                <li>📍 Houthalen-Helchteren, België</li>
+              </ul>
+            </section>
+
+            <!-- Talen met vlaggen -->
+            <section class="cv-sidebar-block">
+              <h2 class="cv-sidebar-heading" data-lang-block="nl">Talen</h2>
+              <h2 class="cv-sidebar-heading" data-lang-block="en">Languages</h2>
+
+              <ul class="cv-lang-list">
+                <li class="cv-lang-item">
+                  <span class="cv-lang-flag">🇳🇱</span>
+                  <div class="cv-lang-text">
+                    <span class="cv-lang-name" data-lang-block="nl"
+                      >Nederlands</span
+                    >
+                    <span class="cv-lang-name" data-lang-block="en">Dutch</span>
+                    <span class="cv-lang-level" data-lang-block="nl"
+                      >Moedertaal</span
+                    >
+                    <span class="cv-lang-level" data-lang-block="en"
+                      >Native</span
+                    >
+                  </div>
+                </li>
+
+                <li class="cv-lang-item">
+                  <span class="cv-lang-flag">🇬🇧</span>
+                  <div class="cv-lang-text">
+                    <span class="cv-lang-name" data-lang-block="nl"
+                      >Engels</span
+                    >
+                    <span class="cv-lang-name" data-lang-block="en"
+                      >English</span
+                    >
+                    <span class="cv-lang-level" data-lang-block="nl"
+                      >Vloeiend</span
+                    >
+                    <span class="cv-lang-level" data-lang-block="en"
+                      >Fluent</span
+                    >
+                  </div>
+                </li>
+
+                <li class="cv-lang-item">
+                  <span class="cv-lang-flag">🇫🇷</span>
+                  <div class="cv-lang-text">
+                    <span class="cv-lang-name" data-lang-block="nl">Frans</span>
+                    <span class="cv-lang-name" data-lang-block="en"
+                      >French</span
+                    >
+                    <span class="cv-lang-level" data-lang-block="nl"
+                      >Basis</span
+                    >
+                    <span class="cv-lang-level" data-lang-block="en"
+                      >Basic</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </aside>
+
+          <!-- RECHTERZIJDE: tab-panels -->
+          <section class="cv-content">
+            <!-- ABOUT -->
+            <section
+              class="cv-section cv-section-panel cv-section-panel--active"
+              data-section="about"
+            >
+              <h2 class="cv-section-title" data-lang-block="nl">Over mij</h2>
+              <h2 class="cv-section-title" data-lang-block="en">About me</h2>
+
+              <p class="cv-text-muted" data-lang-block="nl">
+                Ik ben een flexibele en bescheiden persoon die veel belang hecht
+                aan eerlijkheid en een open blik. Ik leer snel en graag,
+                waardoor ik nieuwe kennis en vaardigheden vlot oppik. In mijn
+                vrije tijd schrijf ik graag en verdiep ik me in geschiedenis,
+                technologie en fitness. Daarnaast hou ik van gamen en
+                teamsporten, omdat samenwerking en strategisch denken mij
+                energie geven.
+              </p>
+              <p class="cv-text-muted" data-lang-block="en">
+                I am a flexible and humble person who values honesty and an open
+                mindset. I enjoy learning and quickly pick up new knowledge and
+                skills. In my free time, I like writing and exploring history,
+                technology, and fitness. I also enjoy gaming and team sports, as
+                they allow me to collaborate with others and think
+                strategically.
+              </p>
+
+              <!-- WAT IK ZOEK / WHAT I'M LOOKING FOR -->
+              <h3 class="cv-section-subtitle" data-lang-block="nl">
+                Wat ik zoek
+              </h3>
+              <h3 class="cv-section-subtitle" data-lang-block="en">
+                What I'm looking for
+              </h3>
+
+              <p class="cv-text-muted" data-lang-block="nl">
+                Ik ben op zoek naar een eerste job of stage als junior
+                programmeur / webdeveloper, bij voorkeur in een leerrijke
+                omgeving waar ik kan groeien in front-end en back-end
+                ontwikkeling.
+              </p>
+              <p class="cv-text-muted" data-lang-block="en">
+                I am looking for a first job or internship as a junior
+                programmer / web developer, preferably in a learning-oriented
+                environment where I can grow in both front-end and back-end
+                development.
+              </p>
+            </section>
+
+            <!-- EXPERIENCE -->
+            <section
+              class="cv-section cv-section-panel"
+              data-section="experience"
+            >
+              <h2 class="cv-section-title" data-lang-block="nl">Ervaring</h2>
+              <h2 class="cv-section-title" data-lang-block="en">Experience</h2>
+
+              <article class="cv-timeline-item">
+                <header class="cv-timeline-header">
+                  <div>
+                    <h3 class="cv-timeline-role" data-lang-block="nl">
+                      Kassabediende
+                    </h3>
+                    <h3 class="cv-timeline-role" data-lang-block="en">
+                      Cashier
+                    </h3>
+
+                    <p class="cv-timeline-company" data-lang-block="nl">
+                      Lidl · Heusden
+                    </p>
+                    <p class="cv-timeline-company" data-lang-block="en">
+                      Lidl · Heusden
+                    </p>
+                  </div>
+                  <span data-lang-block="en" class="cv-timeline-date"
+                    >4 months</span
+                  >
+                  <span data-lang-block="nl" class="cv-timeline-date"
+                    >4 maanden</span
+                  >
+                </header>
+                <ul class="cv-timeline-list">
+                  <li data-lang-block="nl">
+                    gewerkt met een kassa systeem om aankopen snel en nauwkeurig
+                    af te handelen.
+                  </li>
+                  <li data-lang-block="nl">
+                    kan verantwoord omgaan met geld en nauwkeurig transacties
+                    verwerken.
+                  </li>
+                  <li data-lang-block="nl">
+                    kan kalm en vriendelijk blijven onder druk tijdens drukke
+                    periodes.
+                  </li>
+
+                  <li data-lang-block="en">
+                    operated a cash register system to process purchases quickly
+                    and accurately.
+                  </li>
+                  <li data-lang-block="en">
+                    able to handle money responsibly and process transactions
+                    accurately.
+                  </li>
+                  <li data-lang-block="en">
+                    able to stay calm and friendly under pressure during busy
+                    periods.
+                  </li>
+                </ul>
+              </article>
+            </section>
+
+            <!-- EDUCATION -->
+            <section
+              class="cv-section cv-section-panel"
+              data-section="education"
+            >
+              <h2 class="cv-section-title" data-lang-block="nl">Opleiding</h2>
+              <h2 class="cv-section-title" data-lang-block="en">Education</h2>
+
+              <article class="cv-timeline-item education-item">
+                <header class="cv-timeline-header">
+                  <div>
+                    <h3 class="cv-timeline-role" data-lang-block="nl">
+                      Secundaire school: Van Veldeke (ASO)
+                    </h3>
+                    <h3 class="cv-timeline-role" data-lang-block="en">
+                      Secondary school: Van Veldeke (ASO)
+                    </h3>
+
+                    <p class="cv-timeline-company" data-lang-block="nl">
+                      STEM Wetenschappen
+                    </p>
+                    <p class="cv-timeline-company" data-lang-block="en">
+                      STEM Sience
+                    </p>
+                  </div>
+                  <span class="cv-timeline-date">2016 – 2020</span>
+                </header>
+              </article>
+
+              <article class="cv-timeline-item education-item">
+                <header class="cv-timeline-header">
+                  <div>
+                    <h3 class="cv-timeline-role" data-lang-block="nl">
+                      Secundaire school: Level X (TSO)
+                    </h3>
+                    <h3 class="cv-timeline-role" data-lang-block="en">
+                      Secondary school: Level X (TSO)
+                    </h3>
+
+                    <p class="cv-timeline-company" data-lang-block="nl">
+                      Toegepaste Computerwetenschappen
+                    </p>
+                    <p class="cv-timeline-company" data-lang-block="en">
+                      Applied Computer Sience
+                    </p>
+                  </div>
+                  <span class="cv-timeline-date">2020 – 2022</span>
+                </header>
+              </article>
+
+              <article class="cv-timeline-item education-item">
+                <header class="cv-timeline-header">
+                  <div>
+                    <h3 class="cv-timeline-role" data-lang-block="nl">
+                      PXL Hogeschool
+                    </h3>
+                    <h3 class="cv-timeline-role" data-lang-block="en">
+                      PXL University College
+                    </h3>
+
+                    <p class="cv-timeline-company" data-lang-block="nl">
+                      Graduaat Opleiding Programeren
+                    </p>
+                    <p class="cv-timeline-company" data-lang-block="en">
+                      asociate degree Programing
+                    </p>
+                  </div>
+                  <span data-lang-block="en" class="cv-timeline-date"
+                    >2022 – present</span
+                  >
+                  <span data-lang-block="nl" class="cv-timeline-date"
+                    >2022 – heden</span
+                  >
+                </header>
+              </article>
+            </section>
+
+            <!-- SKILLS -->
+            <section
+              class="cv-section cv-section-panel"
+              data-section="skills"
+              id="skills-overview"
+            >
+              <h2 class="cv-section-title" data-lang-block="nl">
+                Vaardigheden
+              </h2>
+              <h2 class="cv-section-title" data-lang-block="en">Skills</h2>
+
+              <!-- SOFT SKILLS -->
+              <h3 class="cv-section-subtitle" data-lang-block="nl">
+                Soft skills
+              </h3>
+              <h3 class="cv-section-subtitle" data-lang-block="en">
+                Soft skills
+              </h3>
+
+              <div class="skills-progress">
+                <!-- 1. Teamspeler & communicatief -->
+                <div class="skill-progress" style="--skill-level: 90%">
+                  <div class="skill-progress-header">
+                    <span class="skill-progress-name" data-lang-block="nl">
+                      Teamspeler &amp; communicatief
+                    </span>
+                    <span class="skill-progress-name" data-lang-block="en">
+                      Team player &amp; communicative
+                    </span>
+                    <span class="skill-progress-label" data-lang-block="nl">
+                      Gevorderd
+                    </span>
+                    <span class="skill-progress-label" data-lang-block="en">
+                      Advanced
+                    </span>
+                  </div>
+                  <div class="skill-progress-bar">
+                    <div class="skill-progress-bar-fill"></div>
+                  </div>
+                </div>
+
+                <!-- 2. Probleemoplossend & analytisch -->
+                <div class="skill-progress" style="--skill-level: 85%">
+                  <div class="skill-progress-header">
+                    <span class="skill-progress-name" data-lang-block="nl">
+                      Probleemoplossend &amp; analytisch
+                    </span>
+                    <span class="skill-progress-name" data-lang-block="en">
+                      Problem-solving &amp; analytical
+                    </span>
+                    <span class="skill-progress-label" data-lang-block="nl">
+                      Gevorderd
+                    </span>
+                    <span class="skill-progress-label" data-lang-block="en">
+                      Advanced
+                    </span>
+                  </div>
+                  <div class="skill-progress-bar">
+                    <div class="skill-progress-bar-fill"></div>
+                  </div>
+                </div>
+
+                <!-- 3. Leergierig & groeimindset -->
+                <div class="skill-progress" style="--skill-level: 85%">
+                  <div class="skill-progress-header">
+                    <span class="skill-progress-name" data-lang-block="nl">
+                      Leergierig &amp; groeimindset
+                    </span>
+                    <span class="skill-progress-name" data-lang-block="en">
+                      Eager to learn &amp; growth mindset
+                    </span>
+                    <span class="skill-progress-label" data-lang-block="nl">
+                      Gevorderd
+                    </span>
+                    <span class="skill-progress-label" data-lang-block="en">
+                      Advanced
+                    </span>
+                  </div>
+                  <div class="skill-progress-bar">
+                    <div class="skill-progress-bar-fill"></div>
+                  </div>
+                </div>
+
+                <!-- 4. Betrouwbaar & verantwoordelijk -->
+                <div class="skill-progress" style="--skill-level: 80%">
+                  <div class="skill-progress-header">
+                    <span class="skill-progress-name" data-lang-block="nl">
+                      Betrouwbaar &amp; verantwoordelijk
+                    </span>
+                    <span class="skill-progress-name" data-lang-block="en">
+                      Reliable &amp; responsible
+                    </span>
+                    <span class="skill-progress-label" data-lang-block="nl">
+                      Goed
+                    </span>
+                    <span class="skill-progress-label" data-lang-block="en">
+                      Good
+                    </span>
+                  </div>
+                  <div class="skill-progress-bar">
+                    <div class="skill-progress-bar-fill"></div>
+                  </div>
+                </div>
+
+                <!-- 5. Stressbestendig & klantgericht -->
+                <div class="skill-progress" style="--skill-level: 75%">
+                  <div class="skill-progress-header">
+                    <span class="skill-progress-name" data-lang-block="nl">
+                      Stressbestendig &amp; klantgericht
+                    </span>
+                    <span class="skill-progress-name" data-lang-block="en">
+                      Stress-resilient &amp; customer-focused
+                    </span>
+                    <span class="skill-progress-label" data-lang-block="nl">
+                      Goed
+                    </span>
+                    <span class="skill-progress-label" data-lang-block="en">
+                      Good
+                    </span>
+                  </div>
+                  <div class="skill-progress-bar">
+                    <div class="skill-progress-bar-fill"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- TECHNICAL SKILLS -->
+              <h3 class="cv-section-subtitle" data-lang-block="nl">
+                Technische skills
+              </h3>
+              <h3 class="cv-section-subtitle" data-lang-block="en">
+                Technical skills
+              </h3>
+
+              <!-- Desktop/Tablet: tabel (NL/EN aparte tabel) -->
+              <div class="skills-table-wrapper">
+                <!-- NL -->
+                <table class="skills-table" data-lang-block="nl">
+                  <thead>
+                    <tr>
+                      <th>Categorie</th>
+                      <th>Technologieën</th>
+                      <th>Niveau</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Front-end</td>
+                      <td>HTML, CSS, JavaScript, vue</td>
+                      <td>Gevorderd</td>
+                    </tr>
+                    <tr>
+                      <td>Back-end</td>
+                      <td>Java, C#, PHP</td>
+                      <td>Goed</td>
+                    </tr>
+                    <tr>
+                      <td>databases</td>
+                      <td>sql, mysql, postgresql, mongoDB</td>
+                      <td>goed</td>
+                    </tr>
+                    <tr>
+                      <td>Overig</td>
+                      <td>Git, Scrum, UX basics</td>
+                      <td>Goed</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <!-- EN -->
+                <table class="skills-table" data-lang-block="en">
+                  <thead>
+                    <tr>
+                      <th>Category</th>
+                      <th>Technologies</th>
+                      <th>Level</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Front-end</td>
+                      <td>HTML, CSS, JavaScript, vue</td>
+                      <td>Advanced</td>
+                    </tr>
+                    <tr>
+                      <td>Back-end</td>
+                      <td>Java, C#, PHP</td>
+                      <td>Good</td>
+                    </tr>
+                    <tr>
+                      <td>databases</td>
+                      <td>sql, mysql, postgresql, mongoDB</td>
+                      <td>good</td>
+                    </tr>
+                    <tr>
+                      <td>Other</td>
+                      <td>Git, Scrum, UX basics</td>
+                      <td>Good</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Mobiel: kaartjes i.p.v. tabel -->
+              <div class="skills-mobile-list">
+                <!-- Front-end -->
+                <article class="skills-mobile-item">
+                  <h3 data-lang-block="nl">Front-end</h3>
+                  <h3 data-lang-block="en">Front-end</h3>
+                  <p><strong>HTML, CSS, JavaScript, React</strong></p>
+                  <p data-lang-block="nl">Niveau: gevorderd</p>
+                  <p data-lang-block="en">Level: advanced</p>
+                </article>
+
+                <!-- Back-end -->
+                <article class="skills-mobile-item">
+                  <h3 data-lang-block="nl">Back-end</h3>
+                  <h3 data-lang-block="en">Back-end</h3>
+                  <p><strong>Java, C#, PHP</strong></p>
+                  <p data-lang-block="nl">Niveau: goed</p>
+                  <p data-lang-block="en">Level: good</p>
+                </article>
+
+                <!-- Overig / Other -->
+                <article class="skills-mobile-item">
+                  <h3 data-lang-block="nl">Overig</h3>
+                  <h3 data-lang-block="en">Other</h3>
+                  <p><strong>Git, Scrum, UX basics</strong></p>
+                  <p data-lang-block="nl">Niveau: goed</p>
+                  <p data-lang-block="en">Level: good</p>
+                </article>
+              </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section
+              class="cv-section cv-section-panel"
+              data-section="projects"
+            >
+              <h2 class="cv-section-title" data-lang-block="nl">Projecten</h2>
+              <h2 class="cv-section-title" data-lang-block="en">Projects</h2>
+
+              <div class="projects-grid">
+                <!-- Cherkesky - boekproject -->
+                <article class="project-card">
+                  <h3>Cherkesky (boekproject)</h3>
+                  <p data-lang-block="nl">
+                    Historisch-fantasy boekproject waarin ik werk aan
+                    wereldopbouw, personages en langere verhaallijnen.
+                  </p>
+                  <p data-lang-block="en">
+                    Historical-fantasy novel project focused on world-building,
+                    characters and long-form storytelling.
+                  </p>
+                  <ul class="project-tags">
+                    <li>Writing</li>
+                    <li>Worldbuilding</li>
+                  </ul>
+                </article>
+
+                <!-- Planetary RTS in Rust/Bevy -->
+                <article class="project-card">
+                  <h3>Planetary RTS prototype</h3>
+                  <p data-lang-block="nl">
+                    Real-time strategy game prototype op procedureel
+                    gegenereerde planeten, geïnspireerd door Planetary
+                    Annihilation, met focus op performance en 3D-rendering.
+                  </p>
+                  <p data-lang-block="en">
+                    Real-time strategy game prototype on procedurally generated
+                    planets (Planetary Annihilation inspired) built to explore
+                    performance, ECS and custom shaders.
+                  </p>
+                  <ul class="project-tags">
+                    <li>Rust</li>
+                    <li>Bevy</li>
+                    <li>WGSL</li>
+                  </ul>
+                </article>
+
+                <!-- PXL groepswerk: Azul Online -->
+                <article class="project-card">
+                  <h3>Azul Online (PXL groepsproject)</h3>
+                  <p data-lang-block="nl">
+                    Groepswerk voor een bachelorvak aan PXL waarin we het
+                    bordspel Azul online nasimuleerden met volledige scorelogica
+                    en webinterface.
+                  </p>
+                  <p data-lang-block="en">
+                    Group project for a PXL bachelor course recreating the board
+                    game Azul as an online web app with full scoring logic and
+                    UI.
+                  </p>
+                  <ul class="project-tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>C#</li>
+                  </ul>
+                </article>
+
+                <!-- Web-adv: boekwebsite (Vue + Symfony + PostgreSQL) -->
+                <article class="project-card">
+                  <h3>Boekwebsite / Web-adv project</h3>
+                  <p data-lang-block="nl">
+                    Web-adv project: een boekwebsite waar gebruikers titels
+                    kunnen opzoeken, filteren en beheren via een moderne
+                    single-page applicatie.
+                  </p>
+                  <p data-lang-block="en">
+                    Web-adv project: a book website where users can search,
+                    filter and manage titles through a modern single-page
+                    application.
+                  </p>
+                  <ul class="project-tags">
+                    <li>Vue</li>
+                    <li>PHP</li>
+                    <li>Symfony</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+          </section>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="cv-footer">
+          <p class="cv-footer-copy" data-lang-block="nl">
+            © 2025 Rauf Kahraman. Alle rechten voorbehouden.
+          </p>
+          <p class="cv-footer-copy" data-lang-block="en">
+            © 2025 Rauf Kahraman. All rights reserved.
+          </p>
+
+          <div class="cv-footer-links">
+            <a href="#top" data-lang-block="nl">Naar boven ↑</a>
+            <a href="#top" data-lang-block="en">Back to top ↑</a>
+            <a href="mailto:your.email@example.com">Email</a>
+            <a
+              href="https://www.linkedin.com/in/your-profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </footer>
+      </main>
+
+      <!-- Scripts -->
+      <script>
+        const rootElement = document.documentElement;
+        const langSwitch = document.getElementById("langSwitch");
+        const navButtons = document.querySelectorAll(".cv-nav-btn");
+        const panels = document.querySelectorAll(".cv-section-panel");
+
+        // taal-toggle
+        if (langSwitch) {
+          langSwitch.checked = rootElement.getAttribute("data-lang") === "en";
+          langSwitch.addEventListener("change", function () {
+            const lang = this.checked ? "en" : "nl";
+            rootElement.setAttribute("data-lang", lang);
+          });
+        }
+
+        // tabbed content rechts
+        function showSection(section) {
+          panels.forEach((panel) => {
+            panel.classList.toggle(
+              "cv-section-panel--active",
+              panel.dataset.section === section
+            );
+          });
+
+          navButtons.forEach((btn) => {
+            btn.classList.toggle(
+              "cv-nav-btn--active",
+              btn.dataset.section === section
+            );
+          });
+        }
+
+        navButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            showSection(btn.dataset.section);
+          });
+        });
+
+        // default: about
+        showSection("about");
+      </script>
+    </div>
+  </body>
+</html>
