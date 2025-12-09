@@ -153,7 +153,7 @@
     /* Foto + lichte highlight */
     background-image:
       radial-gradient(circle at 30% 20%, rgba(15, 23, 42, 0.35), transparent 60%),
-      url("/images/profilePic.png");
+      url("../images/profilePic.png");
     background-repeat: no-repeat, no-repeat;
     /* gradient gewoon centered, foto iets hoger en ingezoomd */
     background-position:
