@@ -150,7 +150,7 @@
     border-radius: 999px;
     border: 2px solid var(--border-strong);
   
-    background: url("../images/profilePic.png") center 20% / cover no-repeat;
+    background: url("/curriculum-vitae-RaufKahraman/images/profilePic.png") center 20% / cover no-repeat;
   
     box-shadow:
       0 0 0 1px rgba(15, 23, 42, 0.7),
